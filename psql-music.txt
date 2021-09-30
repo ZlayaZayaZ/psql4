@@ -1,0 +1,46 @@
+create table musician(
+id serial primary key,
+name varchar(50) not null unique
+);
+
+create table genre(
+id serial primary key,
+name_genre varchar(50) not null unique
+);
+
+create table musician_genre(
+musician_id integer references musician(id),
+genre_id integer references genre(id),
+constraint pk_musician_genre primary key (musician_id, genre_id)
+);
+
+create table album(
+id serial primary key,
+name_album varchar(50) not null,
+year_of_issue integer not null
+);
+
+create table musician_album(
+musician_id integer references musician(id),
+album_id integer references album(id),
+constraint pk_musician_album primary key (musician_id, album_id)
+);
+
+create table track(
+id serial primary key,
+name_track varchar(50) not null,
+duration integer not null,
+album_id integer references album(id)
+);
+
+create table collection(
+id serial primary key,
+name_collection varchar(50) not null,
+year_of_issue integer not null
+);
+
+create table collection_track(
+collection_id integer references collection(id),
+track_id integer references track(id),
+constraint pk_collection_track primary key (collection_id, track_id)
+);

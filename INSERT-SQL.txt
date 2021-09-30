@@ -1,0 +1,338 @@
+INSERT INTO musician(name)
+VALUES('Сплин');
+
+INSERT INTO musician(name)
+VALUES('Земфира');
+
+INSERT INTO musician(name)
+VALUES('Григорий Лепс');
+
+INSERT INTO musician(name)
+VALUES('Ханна');
+
+INSERT INTO musician(name)
+VALUES('Ольга Бузова');
+
+INSERT INTO musician(name)
+VALUES('Би-2');
+
+INSERT INTO musician(name)
+VALUES('ХЛЕБ');
+
+INSERT INTO musician(name)
+VALUES('Лион');
+
+INSERT INTO musician(name)
+VALUES('Ислам Итляшев');
+
+INSERT INTO musician(name)
+VALUES('Turbotronic');
+
+INSERT INTO musician(name)
+VALUES('Валентин Стрыкало');
+
+
+INSERT INTO genre(name_genre)
+VALUES('Поп');
+
+INSERT INTO genre(name_genre)
+VALUES('Рок');
+
+INSERT INTO genre(name_genre)
+VALUES('Рэп');
+
+INSERT INTO genre(name_genre)
+VALUES('Шансон');
+
+INSERT INTO genre(name_genre)
+VALUES('Хип-Хоп');
+
+INSERT INTO genre(name_genre)
+VALUES('Танцевальная');
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(1, 2);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(2, 1);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(2, 2);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(3, 4);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(4, 1);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(5, 1);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(6, 2);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(7, 5);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(8, 3);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(9, 4);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(10, 6);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(11, 2);
+
+INSERT INTO musician_genre(musician_id, genre_id)
+VALUES(11, 1);
+
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Новые люди', 2003);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Земфира', 2012);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Я тебя не люблю', 2009);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Мысли', 2018);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Принимай меня', 2018);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Коллекция легендарных песен', 2010);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Пушка', 2017);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Львиное Сердце', 2010);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Лучше чем вчера', 2018);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Воровал и Буду Воровать', 2019);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('2K20 Album', 2020);
+
+INSERT INTO album(name_album, year_of_issue)
+VALUES('Смирись и расслабься', 2012);
+
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(1, 1);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(2, 2);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(3, 3);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(4, 4);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(5, 5);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(6, 6);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(7, 7);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(8, 8);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(8, 9);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(9, 10);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(10, 11);
+
+INSERT INTO musician_album(musician_id, album_id)
+VALUES(11, 12);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Время назад', 252, 1);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Новые люди', 224, 1);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('140', 233, 2);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Синоптик', 225, 2);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Она не твоя', 220, 3);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Я тебя не люблю', 194, 3);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Омар Хаям', 185, 4);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Пули', 217, 4);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Чемпион', 219, 5);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Слабость', 197, 5);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Мой Рок-Н-Ролл', 405, 6);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Скользкие улицы', 340, 6);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Месседж', 79, 7);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Плачу На Техно', 170, 7);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Мой милый ангел', 225, 8);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Отпусти', 272, 8);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Мой город', 275, 9);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Новый день', 198, 9);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Восемнадцать лет', 146, 10);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Ты моя', 199, 10);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('My House', 201, 11);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Inssa Assa', 156, 11);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Party Day', 270, 11);
+
+INSERT INTO track(name_track, duration, album_id)
+VALUES('Дешевые драмы', 230, 12);
+
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Больно не будет', 2015);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('О людях', 2010);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Женские слабости', 2018);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Под гитару', 2011);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Танцевальная коллекция', 2020);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Тюрьма плачет', 2010);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Инфаркт', 2012);
+
+INSERT INTO collection(name_collection, year_of_issue)
+VALUES('Лучше чем был', 2006);
+
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(1, 1);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(1, 3);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(1, 4);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(2, 2);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(2, 5);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(2, 6);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(3, 8);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(3, 9);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(3, 10);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(4, 11);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(4, 12);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(4, 1);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(4, 5);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(5, 13);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(5, 14);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(5, 21);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(5, 23);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(6, 16);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(6, 18);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(6, 6);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(7, 2);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(7, 3);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(7, 4);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(8, 2);
+
+INSERT INTO collection_track(collection_id, track_id)
+VALUES(8, 6);
+
